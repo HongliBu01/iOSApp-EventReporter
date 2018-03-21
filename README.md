@@ -1,6 +1,4 @@
-# Final Project
-
-Discover
+# EventReporter
 
 ## Third-Party Framework:
 ### Firebase
@@ -17,7 +15,7 @@ In the project, we use FirebaseDatabase as the datasase to save and retrieve use
 (2) obeserve database and retrieve newly posted data by "ref. child("posts").observe(.childAdded) { (snapshot: DataSnapshot) in .....})<br>
 
 
-(Pod Update before Running! , then autocreate schema!)
+## Pod Update before Running! , then autocreate schema!
 ## Instructions:
 1. "MarketingMaterials" was uploaded to another branch called MarketingMaterials
 2. After cloning the master branch, open the project by clicking on ".xcworkspace" file
