@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="HPb-Ya-649">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="PartyLET.ttf">
+            <string>PartyLetPlain</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Splash View Controller-->
+        <scene sceneID="xRw-XB-aK1">
+            <objects>
+                <viewController storyboardIdentifier="SplashViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="HPb-Ya-649" customClass="SplashViewController" customModule="NewDiscoverNearby" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eOF-zw-9QQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nx7-a2-yvL">
+                                <rect key="frame" x="110" y="543" width="155" height="68"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="155" id="QP6-ll-WNd"/>
+                                    <constraint firstAttribute="height" constant="68" id="mpB-Fx-Tgy"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="32"/>
+                                <state key="normal" title="Start"/>
+                                <connections>
+                                    <action selector="topContinue:" destination="HPb-Ya-649" eventType="touchUpInside" id="LP5-uO-5Qe"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Discover" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U54-fA-War">
+                                <rect key="frame" x="67" y="76" width="240" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="TbF-Hl-i4p"/>
+                                    <constraint firstAttribute="height" constant="80" id="eoT-Xv-tRu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="PartyLetPlain" family="Party LET" pointSize="60"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="DXE-1x-rs9">
+                                <rect key="frame" x="16" y="217" width="343" height="305"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">INSTRUCTIONS:1.Sign Up use a email, username and password, or you can use(email: user@gmail.com, passoward: 123456) or (email: mpcs@gmail.com, passoward: 123456) 2.Log in and view images and events by scrolling down the home page3.Click “+” button to enter the event post page4.In event post page, you can post images.(do not forget caption, otherwise, your posting info won’t show on the map)5.Switch to “Explore” page, you can see location of every posted events, tap on icon, you can see details.</string>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Nx7-a2-yvL" firstAttribute="centerX" secondItem="SA2-cY-EEC" secondAttribute="centerX" id="7n7-hN-mud"/>
+                            <constraint firstItem="SA2-cY-EEC" firstAttribute="bottom" secondItem="Nx7-a2-yvL" secondAttribute="bottom" constant="56" id="PkN-Sk-Aai"/>
+                            <constraint firstItem="U54-fA-War" firstAttribute="centerX" secondItem="SA2-cY-EEC" secondAttribute="centerX" id="my7-kY-gVC"/>
+                            <constraint firstItem="U54-fA-War" firstAttribute="top" secondItem="SA2-cY-EEC" secondAttribute="top" constant="56" id="yDN-D6-eOV"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="SA2-cY-EEC"/>
+                    </view>
+                    <connections>
+                        <outlet property="dismissButton" destination="Nx7-a2-yvL" id="LxX-OK-hlG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KiV-pf-r2N" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="40.799999999999997" y="69.715142428785612"/>
+        </scene>
+    </scenes>
+</document>
